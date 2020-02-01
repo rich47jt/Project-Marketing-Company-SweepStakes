@@ -8,14 +8,14 @@ namespace Project_SweepStakes
 {
     public static class UserInterface 
     {
-        public static void UserInput(Contestant contestant)
+        public static string GetUserInformation()
         {
-           Console.WriteLine("please input first name");
-           Console.WriteLine("please input last name");
-           Console.WriteLine("please input email address");
-            
+            Console.WriteLine("Hello this is a SweepStakes if you wanna win big please enter your information");
+            Console.WriteLine("Whats your First name, Last name");
+            Console.WriteLine("whats your emailaddress");
             
 
+            return;
         }
     }
 }

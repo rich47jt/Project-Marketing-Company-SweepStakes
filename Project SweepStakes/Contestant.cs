@@ -8,15 +8,17 @@ namespace Project_SweepStakes
 {
     public class Contestant
     {
-        string firstname;
-        string emailaddress;
-        string lastname;
-        int RegistrationNumber;
+       public  string firstname;
+       public  string emailaddress;
+       public string lastname;
+       public  int RegistrationNumber;
 
         public Contestant()
         {
             firstname = "";
             lastname = "";
+            emailaddress = "";
+            RegistrationNumber = 0;
             
         }
     }

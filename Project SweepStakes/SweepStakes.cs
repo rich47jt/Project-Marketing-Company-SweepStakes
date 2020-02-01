@@ -8,15 +8,33 @@ namespace Project_SweepStakes
 {
     class SweepStakes
     {
-
+        Dictionary<int, Contestant> contestant;
+        string name;
+        public string Name;
         public SweepStakes()
         {
+            Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
 
         }
             
-        public void CatalogofContestants()
+        public string SweepStakesname(string name)
         {
-            Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
+
+            return Name;
+        }
+
+        public void RegisterContestent(Contestant contestant)
+        {
+
+        }
+
+        public void PickWinner() 
+        { 
+
+        }
+
+        public void PrintConstestantInfo(Contestant contestant)
+        {
 
         }
     }
