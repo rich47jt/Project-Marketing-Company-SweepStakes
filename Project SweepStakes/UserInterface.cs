@@ -10,12 +10,15 @@ namespace Project_SweepStakes
     {
         public static string GetUserInformation()
         {
-            Console.WriteLine("Hello this is a SweepStakes if you wanna win big please enter your information");
-            Console.WriteLine("Whats your First name, Last name");
-            Console.WriteLine("whats your emailaddress");
             
+            Console.WriteLine("Hello this is a SweepStakes if you wanna win big please enter your information: First, Last name, and Emailadress ");
+            string prompt = Console.ReadLine();
 
-            return;
+
+
+            return prompt;
         }
+
+        
     }
 }

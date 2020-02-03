@@ -12,6 +12,7 @@ namespace Project_SweepStakes
        public  string emailaddress;
        public string lastname;
        public  int RegistrationNumber;
+        
 
         public Contestant()
         {
@@ -20,6 +21,11 @@ namespace Project_SweepStakes
             emailaddress = "";
             RegistrationNumber = 0;
             
+            
         }
+
+       
+
+        
     }
 }
