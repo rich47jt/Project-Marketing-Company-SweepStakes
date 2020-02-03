@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project_SweepStakes
 {
-    class SweepStakes
-    {
+   public  class SweepStakes
+   {
         Dictionary<int, Contestant> contestants;
         private string name;
 
@@ -34,9 +34,9 @@ namespace Project_SweepStakes
 
         public void RegisterContestent(Contestant contestant)
         {
+            
             contestant.RegistrationNumber = contestants.Count;
             contestants.Add(contestant.RegistrationNumber, contestant);
-
 
         }
 
@@ -46,14 +46,16 @@ namespace Project_SweepStakes
             Random random = new Random();
             int rgn = random.Next(0,contestants.Count);
             Contestant winner = contestants[rgn];
+            Console.WriteLine("this is the winner is " + winner);
             
         }
 
         public void PrintConstestantInfo(Contestant contestant)
         {
-            Console.WriteLine("Contestants First name, Last name  " + contestant.firstname, contestant.lastname);
+            Console.WriteLine("Contestants First name, Last name  " + contestant.firstname);
+            Console.WriteLine("Contestants Last name, Last name  " + contestant.lastname);
             Console.WriteLine("Contestants emailaddress " + contestant.emailaddress);
-            Console.ReadLine();
+            
             
         }
     }

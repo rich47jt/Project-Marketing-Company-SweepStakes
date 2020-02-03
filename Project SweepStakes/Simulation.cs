@@ -8,5 +8,9 @@ namespace Project_SweepStakes
 {
     class Simulation
     {
+        public void CreatingMarketingFirmWithManager()
+        {
+
+        }
     }
 }

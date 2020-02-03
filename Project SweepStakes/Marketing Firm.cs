@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Project_SweepStakes
 {
-    class Marketing_Firm
+    class Marketing_Firm: ISweepStakesManager
     {
+        public Marketing_Firm(ISweepStakesManager manager)
+        {
+
+        }
+
+        public void CreateSweepStakes()
+        {
+
+        }
+
     }
 }
