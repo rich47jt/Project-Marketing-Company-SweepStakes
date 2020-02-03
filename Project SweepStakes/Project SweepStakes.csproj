@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contestant.cs" />
+    <Compile Include="FactoryManager.cs" />
     <Compile Include="ISweepStakesMangaer.cs" />
     <Compile Include="Marketing Firm.cs" />
     <Compile Include="Program.cs" />
