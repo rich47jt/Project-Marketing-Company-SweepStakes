@@ -14,7 +14,7 @@ namespace Project_SweepStakes
              
         
 
-         void GetSweepStakes();
+         SweepStakes GetSweepStakes();
         
             
         

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Project_SweepStakes
 {
-   public  class SweepStakes
-   {
+    public class SweepStakes
+    {
         Dictionary<int, Contestant> contestants;
         private string name;
 
-       
-        public SweepStakes(string name)
+
+        public SweepStakes()
         {
             Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
-            this.Name = name;
+            Name = name;
 
         }
 
@@ -34,15 +34,14 @@ namespace Project_SweepStakes
 
         public void RegisterContestent(Contestant contestant)
         {
-            
+
             contestant.RegistrationNumber = contestants.Count;
             contestants.Add(contestant.RegistrationNumber, contestant);
 
         }
 
-        public void PickWinner() 
-        {
-     
+        public void PickWinner()
+        { 
             Random random = new Random();
             int rgn = random.Next(0,contestants.Count);
             Contestant winner = contestants[rgn];
@@ -55,7 +54,6 @@ namespace Project_SweepStakes
             Console.WriteLine("Contestants First name, Last name  " + contestant.firstname);
             Console.WriteLine("Contestants Last name, Last name  " + contestant.lastname);
             Console.WriteLine("Contestants emailaddress " + contestant.emailaddress);
-            
             
         }
     }

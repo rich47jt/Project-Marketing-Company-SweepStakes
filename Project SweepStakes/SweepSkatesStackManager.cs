@@ -10,14 +10,27 @@ namespace Project_SweepStakes
     {
         Stack<SweepStakes> stack;
 
-        public void InsertSweepStakes(SweepStakes sweepStakes)
+        public SweepSkatesStackManager()
         {
-
+            stack = new Stack<SweepStakes>();
         }
 
-        public void GetSweepstakes()
-        {
+       public void InsertSweepStakes(SweepStakes sweepStakes)
+       {
 
-        }
+            
+            stack.Push(sweepStakes);
+            
+       }
+
+       public SweepStakes GetSweepStakes()
+       {
+           
+            
+           SweepStakes sweepStakes = stack.Pop();
+            return sweepStakes;
+       }
+
+
     }
 }
