@@ -37,7 +37,7 @@ namespace Project_SweepStakes
 
             contestant.RegistrationNumber = contestants.Count;
             contestants.Add(contestant.RegistrationNumber, contestant);
-
+            
         }
 
         public void PickWinner()

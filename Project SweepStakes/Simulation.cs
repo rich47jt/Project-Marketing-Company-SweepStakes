@@ -31,13 +31,7 @@ namespace Project_SweepStakes
             return manager;
         }
 
-        public void RunSimulation()
-        {
-            string input = ChooseManager();
-            ISweepStakesManager manager = AddManager(input);
-            CreatingMarketingFirmWithManager(manager);
-        }
-        
+       
 
 
 
